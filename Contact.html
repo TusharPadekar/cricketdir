@@ -14,58 +14,60 @@
 	<script type="text/javascript" src="Contact.js"></script>
 
 	<style type="text/css">
+		
 		label{
 			font-weight: bolder;
 			font-size: 18px;
 		}
 
-		span{
-			font-style: italic;
-			color: red;
-			font-size: 16px;
-		}
 		
-		#submit{
-			border: dotted 1px black;
-			align-item:center;
-			justify-content:center;
-		}
 		
 		#submit:hover{
 			background:#B3EAF0;
 			color:black;
 		}
-		
-		#reset{
-			border: dotted 1px black;		
-		}
-		
+				
 		#reset:hover{
 			background:#EC869D;
+			border: dotted 1px red;
 			color:black;
 		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}	
+
+		label {
+			display: inline-block;
+			width: 150px;
+		}
+
+			
+
 		
 	</style>
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-					<img src="Images/logo.jpg" class="img-fluid mx-auto" height="70" width="170">
-				</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<img src="Images/logo.jpg" class="img-fluid mx-auto" height="60" width="170">
+					</div>
 
-				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
-						<div class="input-group">
-							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
-							<button class="btn btn-success" type="submit">Submit</button>
-						</div>
-					</form>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<form class="form-inline" style="margin-top: 35px;">
+							<div class="input-group">
+								<input class="form-control mr-sm-2 flex-grow-1" type="text" placeholder="Search....">
+								<div class="input-group-append">
+									<button class="btn btn-success" type="submit">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-			</div>
-		</div>
-	</header>
+			</div><br>
+		</header>
 
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 		<div class="container-fluid">
@@ -98,61 +100,74 @@
 						<form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
 
 							<div class="form-group">
-						      	<label for="Fname">First Name: &nbsp;&nbsp;</label>
-						      	<input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required=""><span id="Fnamemsg"></span>
-						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<label for="Fname">First Name:</label>
+								<input type="text" class="form-control" id="Fname" placeholder="Enter First Name" name="Fname" required="">
+								<span id="Fnamemsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						      	<label for="Lname">Last Name: &nbsp;&nbsp;</label>
-						      	<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required=""><span id="Lnamemsg" required=""></span>
-						    </div><br><br><br>
+							<div class="form-group">
+								<label for="Lname">Last Name:</label>
+								<input type="text" class="form-control" id="Lname" placeholder="Enter Last Name" name="Lname" required="">
+								<span id="Lnamemsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						     	<label for="Cnumber">Contact No: &nbsp;</label>
-						      	<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required=""> <span id="mobilemsg"></span>
-						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<div class="form-group">
+								<label for="Cnumber">Contact No:</label>
+								<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required="">
+								<span id="mobilemsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						      	<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						      	<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required=""> <span id="emailmsg"></span>
-						    </div><br><br><br>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required="">
+								<span id="emailmsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						      	<label for="age">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						      	<input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" required=""> <span id="agemsg"></span>
-						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<div class="form-group">
+								<label for="age">Age:</label>
+								<input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" required="">
+								<span id="agemsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						      	<label for="height">Members: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						      	<input type="number" class="form-control" id="height" placeholder="Number of members" name="height" required=""> <span id="heightmsg"></span>
-						    </div><br><br><br><br>
+							<div class="form-group">
+								<label for="height">Members:</label>
+								<input type="number" class="form-control" id="height" placeholder="Number of members" name="height" required="">
+								<span id="heightmsg"></span>
+							</div><br><br>
 
-						    <div class="form-group">
-						      	<label for="bodytype">Payment: &nbsp;&nbsp;</label>
-						     	<select class="form-control" name="bodytype" id="bodytype" required="">
+							<div class="form-group">
+								<label for="bodytype">Payment:</label>
+								<select class="form-control" name="bodytype" id="bodytype" required="">
 									<option value="0">-Select Payment Method-</option>
 									<option value="1">Credit card</option>
 									<option value="2">Mobile payment</option>
 									<option value="3">Electronic bank transfers</option>
-								</select> <span id="bodytypemsg"></span>
-						    </div><br>
+								</select>
+								<span id="bodytypemsg"></span>
+							</div><br><br>
 
-						    <div class="form-check">
-						    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-							  	<label style="font-weight: normal; font-size: 17px;" class="form-check-label">
-							    <input type="radio" class="form-check-input" name="gender">Male
-							  	</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							
-							  	<label style="font-weight: normal; font-size: 17px;" class="form-check-label">
-							    <input type="radio" class="form-check-input" name="gender">Female
-							  	</label><span id="gendermsg"></span>
-							</div>
+							<div class="form-group">
+								<label>Gender:</label>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="gender">Male
+									</label>
+								</div>
+								<div class="form-check">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="gender">Female
+									</label>
+								</div>
+								<span id="gendermsg"></span>
+							</div><br><br>
+
 							
 							<br><br><br><br><br><br>	
 							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
-								<input style="font-size: 18px; width: 120px;" type="submit" name="" value="SUBMIT" class="btn btn-primary" id="submit">
+								<input style="font-size: 18px; width: 120px; margin-right: 20px;" type="submit" name="" value="SUBMIT" class="btn btn-primary" id="submit">
 								<input style="font-size: 18px; width: 120px;" type="Reset" name="" value="RESET" class="btn btn-danger" id="reset">
 							</div>
+
 						</form>
 					</div>
 				</div>		
